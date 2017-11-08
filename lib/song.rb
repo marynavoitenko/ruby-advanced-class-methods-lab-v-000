@@ -49,12 +49,9 @@ class Song
 
   def self.new_from_filename(filename)
     song = self.new
-    # artist_song = filename.split(" - ")
-    # song.artist_name = artist_song[0]
-    # song.name = artist_song[1].split(".")[0]
-    puts filename.split(" - ")
-    puts artist_song[0]
-    puts artist_song[1].split(".")[0]
+    filename_array = filename.split(/\.|-/)
+    song.artist_name = filename_array[0].strip!
+    song.name = filename_array[1].strip!
   end
 
 end
