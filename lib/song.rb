@@ -52,7 +52,7 @@ class Song
     artist_song = filename.split("-").strip!
     song.artist_name = artist_song[0]
     song.name = artist_song[1].split(".")[0]
-    
+
   end
 
 end
