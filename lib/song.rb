@@ -63,4 +63,9 @@ class Song
     song.save
     song
   end
+
+  def self.destroy_all
+    self.all.clear
+  end
+
 end
