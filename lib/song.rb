@@ -51,5 +51,5 @@ class Song
     song = self.new
     song.artist_name = filename.split("-").strip!
   end
-  
+
 end
