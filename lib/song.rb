@@ -52,6 +52,7 @@ class Song
     filename_array = filename.split(/\.|-/)
     song.artist_name = filename_array[0].strip!
     song.name = filename_array[1].strip!
+    song
   end
 
 end
